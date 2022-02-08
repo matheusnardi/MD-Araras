@@ -1,0 +1,453 @@
+/* <!-- Matheus Nardi, Gabriel Venezian, Miran e Rubens --> */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid black; */
+}
+body{
+    background-color: #FAFAFA;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 62.5%;
+    min-height: 100vh;
+}
+nav{
+    height: 70px;
+    background-color: #191970;
+    padding-left: 10%;
+    padding-right: 10%;
+    max-width: 100vw;
+    width: 100%;
+    margin-bottom: 10px;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    float: right;
+    height: 100%;
+}
+nav li{
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    margin-right: 30px;
+    height: 100%;
+}
+nav li:last-child{
+    margin-right: 0;
+}
+nav li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    height: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+nav li a:visited{
+    text-decoration: none;
+    color: white;
+}
+nav li a:hover{
+    background-color: #233E9B;
+}
+nav .logo{
+    display: flex;
+    float: left;
+    height: 100%;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+nav img{
+    height: 50px;
+    margin-right: 10px;
+}
+footer{
+    margin-top: 20px;
+    height: 58px;
+    background-color: #191970;
+    padding-left: 10%;
+    padding-right: 10%;
+    max-width: 100vw;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .endereco{
+    font-size: 1.6em;
+}
+footer .icon{
+    width: 40px;
+}
+footer .num{
+    font-size: 1.8em;
+}
+footer .telefone{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* HOME */
+
+main.home{
+    max-width: 100vw;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+main.home .banner{
+    width: 100%;
+    margin-bottom: 10px;
+}
+main.home .banner img{
+    width: 100%;
+    height: 300px;
+}
+main.home .conteudo{
+    width: 50%;
+    font-size: 2em;
+    text-align: justify;
+    display: inline-block;
+}
+main.home .imagem{
+    display: inline-block;
+    text-align: center;
+    width: 49%;
+}
+main.home img{
+    height: 300px;
+}
+
+/* FIM-HOME */
+
+/*  PARCERIAS */
+
+main.parcerias{
+    max-width: 100vw;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+main.parcerias h1{
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+main.parcerias div.linha{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+main.parcerias div.empresa{
+    width: 40%;
+}
+main.parcerias div.empresa img{
+    height: 250px;
+    width: 100%;
+}
+main.parcerias div.descricao{
+    width: 40%;
+    font-size: 2em;
+}
+#reverso{
+    flex-direction: row-reverse;
+}
+#nestle{
+    height: 300px;
+}
+#federal{
+    height: 200px;
+}
+/* FIM-PARCERIAS */
+
+/* PROJETOS */
+
+main.projetos{
+    max-width: 100vw;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+main.projetos h1{
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+main.projetos div.linha{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #191970;
+}
+main.projetos div.projeto{
+    width: 50%;
+}
+main.projetos div.projeto img{
+    height: 350px;
+}
+main.projetos div.descricao{
+    width: 50%;
+}
+main.projetos div.descricao p{
+    font-size: 2em;
+}
+/* FIM-PROJETOS */
+
+/* TERMOS */
+
+main.acordo{
+    max-width: 100vw;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 30px;
+}
+main.acordo div.termos{
+    width: 100%;
+    height: 80vh;
+    font-size: 1.6em;
+    overflow-y: scroll;
+    border: 3px solid rgb(223, 223, 223);
+    padding: 20px;
+}
+main.acordo div.botoes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+main.acordo div.botoes a{
+    height: 50px;
+    width: 200px;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+main.acordo div.botoes a.rejeitar{
+    background-color: rgb(255, 75, 75);
+}
+main.acordo div.botoes a.rejeitar:hover{
+    background-color: rgb(255, 60, 60);
+}
+main.acordo div.botoes a.aceitar{
+    background-color: rgb(69, 173, 95);
+}
+main.acordo div.botoes a.aceitar:hover{
+    background-color: rgb(40, 167, 72);
+}
+/* FIM-TERMOS */
+
+/* CONTATO */
+
+main.contato{
+    max-width: 100vw;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+main.contato h1{
+    font-size: 3em;
+}
+main.contato div.formulario{
+    width: 100%;
+}
+main.contato div.formulario form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+main.contato div.formulario form input{
+    width: 80%;
+    margin-bottom: 20px;
+    height: 40px;
+    background-color: #E9E9E9;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+main.contato div.formulario form textarea{
+    width: 80%;
+    margin-bottom: 20px;
+    height: 120px;
+    background-color: #E9E9E9;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+main.contato div.formulario form button{
+    height: 50px;
+    width: 300px;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    background-color: #4848fc;
+}
+main.contato div.formulario form button:hover{
+    background-color: #2a2a92;
+    cursor: pointer;
+}
+/* FIM-CONTATO */
+
+@media screen and (max-width: 924px){
+    body{
+        font-size: 0.5em;
+    }
+    nav span{
+        display: none;
+    }
+    main.home .banner img{
+        height: 200px;
+    }
+    #federal{
+        height: 150px;
+    }
+    main.projetos div.projeto img{
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    body{
+        font-size: 0.5em;
+    }
+    nav span{
+        display: none;
+    }
+    main.home .banner img{
+        height: 200px;
+    }
+    #federal{
+        height: 150px;
+    }
+    main.projetos div.projeto img{
+        height: 250px;
+    }
+    main.projetos div.projeto img{
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    nav span{
+        display: none;
+    }
+
+    nav li{
+        color: white;
+        font-weight: bold;
+        font-size: 1.5em;
+        height: 100%;
+    }
+    nav li a{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    main.home .conteudo{
+        width: 100%;
+    }
+    main.home .imagem{
+        width: 100%;
+    }
+    main.home .banner img{
+        height: 150px;
+    }
+    footer{
+        font-size: 0.8em;
+    }
+    footer .num{
+        font-size: 1.5em;
+    }
+    footer #phone{
+        display: none;
+    }
+    footer .icon{
+        width: 30px;
+    }
+    main.parcerias div.linha{
+        flex-flow: column;
+        height: auto;
+        border: 3px solid #191970;
+        padding: 20px;
+    }
+    #reverso{
+        flex-flow: column;
+    }
+    main.parcerias div.empresa{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    main.parcerias div.descricao{
+        width: 100%;
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+    main.projetos div.linha{
+        height: auto;
+        padding-bottom: 20px;
+    }
+    main.projetos div.projeto img{
+        height: 150px;
+    }
+}
+@media screen and (max-width: 400px){
+
+    nav li{
+        color: white;
+        font-weight: bold;
+        font-size: 1.5em;
+        height: 100%;
+    }
+    nav li a{
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    
+    nav ul li {
+        position: relative;
+        bottom: 5.5em;
+        left: 1em;
+    }
+
+    nav .logo {
+        position: relative;
+        right: 1em;
+    }
+
+    #cacamba{
+        width: 80%;
+    }
+    main.acordo div.botoes a{
+        height: 50px;
+        width: 100px;
+        font-size: 1.6em;
+        font-weight: bold;
+        color: white;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+}
